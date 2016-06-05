@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9348B9DB1D01831900EC6DDF /* WMCustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9348B9DA1D01831900EC6DDF /* WMCustomScrollView.m */; };
+		93D2C2441D04541700390056 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D2C2431D04541700390056 /* ViewController1.m */; };
+		93D2C2471D04542200390056 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D2C2461D04542200390056 /* ViewController2.m */; };
+		93D2C24A1D04542C00390056 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D2C2491D04542C00390056 /* ViewController3.m */; };
+		93D2C24D1D04543800390056 /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D2C24C1D04543800390056 /* ViewController4.m */; };
+		93D2C2501D045D5300390056 /* ViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D2C24F1D045D5300390056 /* ViewController5.m */; };
+		93D2C2531D045D5E00390056 /* ViewController6.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D2C2521D045D5E00390056 /* ViewController6.m */; };
 		93DE4C031CF591E900FB69AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DE4C021CF591E900FB69AD /* main.m */; };
 		93DE4C061CF591E900FB69AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DE4C051CF591E900FB69AD /* AppDelegate.m */; };
 		93DE4C091CF591E900FB69AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DE4C081CF591E900FB69AD /* ViewController.m */; };
@@ -35,6 +42,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9348B9D91D01831900EC6DDF /* WMCustomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCustomScrollView.h; sourceTree = "<group>"; };
+		9348B9DA1D01831900EC6DDF /* WMCustomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCustomScrollView.m; sourceTree = "<group>"; };
+		93D2C2421D04541700390056 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		93D2C2431D04541700390056 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		93D2C2451D04542200390056 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		93D2C2461D04542200390056 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		93D2C2481D04542C00390056 /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		93D2C2491D04542C00390056 /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		93D2C24B1D04543800390056 /* ViewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
+		93D2C24C1D04543800390056 /* ViewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
+		93D2C24E1D045D5300390056 /* ViewController5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController5.h; sourceTree = "<group>"; };
+		93D2C24F1D045D5300390056 /* ViewController5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController5.m; sourceTree = "<group>"; };
+		93D2C2511D045D5E00390056 /* ViewController6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController6.h; sourceTree = "<group>"; };
+		93D2C2521D045D5E00390056 /* ViewController6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController6.m; sourceTree = "<group>"; };
 		93DE4BFE1CF591E900FB69AD /* scrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DE4C021CF591E900FB69AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93DE4C041CF591E900FB69AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +126,20 @@
 				93DE4C051CF591E900FB69AD /* AppDelegate.m */,
 				93DE4C071CF591E900FB69AD /* ViewController.h */,
 				93DE4C081CF591E900FB69AD /* ViewController.m */,
+				93D2C2421D04541700390056 /* ViewController1.h */,
+				93D2C2431D04541700390056 /* ViewController1.m */,
+				93D2C2451D04542200390056 /* ViewController2.h */,
+				93D2C2461D04542200390056 /* ViewController2.m */,
+				93D2C2481D04542C00390056 /* ViewController3.h */,
+				93D2C2491D04542C00390056 /* ViewController3.m */,
+				93D2C24B1D04543800390056 /* ViewController4.h */,
+				93D2C24C1D04543800390056 /* ViewController4.m */,
+				93D2C24E1D045D5300390056 /* ViewController5.h */,
+				93D2C24F1D045D5300390056 /* ViewController5.m */,
+				93D2C2511D045D5E00390056 /* ViewController6.h */,
+				93D2C2521D045D5E00390056 /* ViewController6.m */,
+				9348B9D91D01831900EC6DDF /* WMCustomScrollView.h */,
+				9348B9DA1D01831900EC6DDF /* WMCustomScrollView.m */,
 				93DE4C0A1CF591E900FB69AD /* Main.storyboard */,
 				93DE4C0D1CF591E900FB69AD /* Assets.xcassets */,
 				93DE4C0F1CF591E900FB69AD /* LaunchScreen.storyboard */,
@@ -270,9 +305,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93D2C2441D04541700390056 /* ViewController1.m in Sources */,
+				9348B9DB1D01831900EC6DDF /* WMCustomScrollView.m in Sources */,
 				93DE4C091CF591E900FB69AD /* ViewController.m in Sources */,
 				93DE4C061CF591E900FB69AD /* AppDelegate.m in Sources */,
 				93DE4C031CF591E900FB69AD /* main.m in Sources */,
+				93D2C2531D045D5E00390056 /* ViewController6.m in Sources */,
+				93D2C2501D045D5300390056 /* ViewController5.m in Sources */,
+				93D2C2471D04542200390056 /* ViewController2.m in Sources */,
+				93D2C24A1D04542C00390056 /* ViewController3.m in Sources */,
+				93D2C24D1D04543800390056 /* ViewController4.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +540,7 @@
 				93DE4C2D1CF591E900FB69AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93DE4C2E1CF591E900FB69AD /* Build configuration list for PBXNativeTarget "scrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +549,7 @@
 				93DE4C301CF591E900FB69AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93DE4C311CF591E900FB69AD /* Build configuration list for PBXNativeTarget "scrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +558,7 @@
 				93DE4C331CF591E900FB69AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
