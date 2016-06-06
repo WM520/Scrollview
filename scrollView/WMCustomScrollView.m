@@ -11,6 +11,7 @@
 #define labelWidth 100
 #define normalFont [UIFont systemFontOfSize:16]
 #define selectFont [UIFont systemFontOfSize:20]
+#define TAG_SALTLICK  1000
 
 @interface WMCustomScrollView()<UIScrollViewDelegate>
 {
@@ -54,7 +55,7 @@
 - (void)setControllersName:(NSArray *)controllersName
 {
     _controllersName = controllersName;
-    _contentScrollView.contentSize = CGSizeMake(self.frame.size.width * controllersName.count, self.frame.size.height);
+    _contentScrollView.contentSize = CGSizeMake(self.frame.size.width * controllersName.count, self.frame.size.height - self.titleHeight);
     
     for (int i = 0; i < controllersName.count; i++) {
         Class cls = NSClassFromString(controllersName[i]);
@@ -87,7 +88,7 @@
         label.text = titleName[i];
         label.userInteractionEnabled = YES;
         label.frame = CGRectMake(labelX, labelY, labelW, labelH);
-        label.tag = 1000 + i;
+        label.tag = TAG_SALTLICK + i;
         [_titleScrollView addSubview:label];
         
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapLabel:)];
@@ -97,20 +98,26 @@
         if (i == 0) {
             label.textColor = [UIColor redColor];
             label.font = selectFont;
-            _lastSelectedLabelTag = 1000;
+            _lastSelectedLabelTag = TAG_SALTLICK;
         }
     }
 }
 
 - (void)tapLabel:(UITapGestureRecognizer *)sender
 {
-    NSInteger index = sender.view.tag - 1000;
-    
-    
+    NSInteger index = sender.view.tag - TAG_SALTLICK;
     CGFloat offsetX = index * self.frame.size.width;
     
     [_contentScrollView setContentOffset:CGPointMake(offsetX, 0) animated:YES];
     NSInteger tagOfLabel = sender.view.tag;
+    
+    /**
+     *  如果点击的和原来选中的label是同一个就返回
+     */
+    if (_lastSelectedLabelTag == tagOfLabel) {
+        return;
+    }
+    
     UILabel *nowLabel = (UILabel *)[self viewWithTag:tagOfLabel];
     
     nowLabel.textColor = [UIColor redColor];
@@ -123,9 +130,14 @@
     
     _lastSelectedLabelTag = tagOfLabel;
     
-    if (index >= 2 && index < self.controllersName.count - 1) {
-        NSInteger orx = nowLabel.tag - 1000;
-        [_titleScrollView setContentOffset:CGPointMake(orx * lastLabel.frame.size.width - (self.frame.size.width/2), 0) animated:YES];
+    if (index > 1 && index < self.controllersName.count - 1) {
+//        if (index * labelWidth > self.frame.size.width / 2) {
+//            CGFloat offsetX = ;
+//        }
+        // 可以自己调节头部的滚动
+        CGFloat offsetX = (index - 2) *lastLabel.frame.size.width + 10;
+        CGFloat offsetY = 0;
+        [_titleScrollView setContentOffset:CGPointMake(offsetX, offsetY)];
     }
     
 }
@@ -135,7 +147,7 @@
 {
     NSInteger index = scrollView.contentOffset.x / self.frame.size.width;
     
-    NSInteger labelOfTag = 1000 + index;
+    NSInteger labelOfTag = TAG_SALTLICK + index;
     
     if (labelOfTag == _lastSelectedLabelTag) {
         return;
@@ -152,9 +164,9 @@
     
     _lastSelectedLabelTag = labelOfTag;
     
-    if (index >= 2 && index < self.controllersName.count - 1) {
+    if (index > 1 && index < self.controllersName.count - 1) {
         CGFloat offsetX = (index - 2) *lastLabel.frame.size.width;
-        [_titleScrollView setContentOffset:CGPointMake(offsetX + 10, 0) animated:YES];
+        [_titleScrollView setContentOffset:CGPointMake(offsetX + 10, 0) animated:NO];
     }
     
 }

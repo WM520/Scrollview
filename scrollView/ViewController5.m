@@ -2,7 +2,7 @@
 //  ViewController5.m
 //  scrollView
 //
-//  Created by David on 16/6/5.
+//  Created by David on 16/6/6.
 //  Copyright © 2016年 WM. All rights reserved.
 //
 
@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
